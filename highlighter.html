@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighter</title>
+    <link rel="stylesheet" href="popup-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="highlightpopup.js" defer></script>
+    <script src="jspdf.min.js" defer></script>
+    <script scr="html2pdf" defer></script>
+</head>
+
+<body>
+
+    <ul class="tray">
+        <li>
+            <a id="add-highlight" href="#" class="tray-ele">
+                <div class="tray-icons">
+                    <i class="tray-icon fas fa-highlighter"></i>
+                    <i class="tray-icon fas fa-highlighter"></i>
+                </div>
+                <div class="icon-names">
+                    <span class="icon-name">Add</span>
+                    <span class="icon-name">Add</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a id="clear-page" href="#" class="tray-ele">
+                <div class="tray-icons">
+                    <i class="tray-icon fas fa-trash"></i>
+                    <i class="tray-icon fas fa-trash"></i>
+                </div>
+                <div class="icon-names">
+                    <span class="icon-name">Clear Page</span>
+                    <span class="icon-name">Clear Page</span>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a id="notes-btn" href="#" class="tray-ele">
+                <div class="tray-icons">
+                    <i class="tray-icon fas fa-download"></i>
+                </div>
+                <div class="icon-names">
+                    <span class="icon-name">Download</span>
+                    <span class="icon-name">Download</span>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="palette">
+
+        <input type="radio" name="palette-color" id="yellow">
+        <label for="yellow" class="yellow palette-color">
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+        </label>
+
+        <input type="radio" name="palette-color" id="red">
+        <label for="red" class="red palette-color">
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+        </label>
+
+        <input type="radio" name="palette-color" id="blue">
+        <label for="blue" class="blue palette-color">
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+        </label>
+
+        <input type="radio" name="palette-color" id="green">
+        <label for="green" class="green palette-color">
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+        </label>
+
+        <input type="radio" name="palette-color" id="grey">
+        <label for="grey" class="grey palette-color">
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+            <span class="check-icon"><i class="fas fa-check"></i></span>
+        </label>
+
+    </div>
+
+</body>
+
+</html>

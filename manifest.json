@@ -1,0 +1,63 @@
+{
+   "manifest_version": 3,
+   "name": "My web annotator",
+   "version": "1.0.0",
+   "description": "Web Annotator-Highlight text and create notes",
+   "author": "Yash Tewari",
+   "icons": {
+     "16": "icon16.png",
+     "32": "icon32.png",
+     "192": "icon192.png",
+     "512": "icon512.png"
+   },
+   "permissions": [
+     "storage",
+     "tabs",
+     "activeTab",
+     "scripting",
+     "notifications"
+   ],
+   "background": {
+     "service_worker": "background.js"
+   },
+   "action": {
+     "default_icon": "icon192.png",
+     "default_popup": "highlighter.html",
+     "default_title": "Web Annotator"
+   },
+   "commands": {
+     "add-highlight": {
+       "description": "Add Highlight",
+       "suggested_key": {
+         "default": "Ctrl+Shift+H",
+         "mac": "Command+Shift+H"
+       }
+     },
+     "remove-highlight": {
+       "description": "Remove Highlight",
+       "suggested_key": {
+         "default": "Ctrl+Shift+X",
+         "mac": "Command+Shift+X"
+       }
+     }
+   },
+   "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+       "js": [
+         "highlighter-util.js",
+         "highlighter.js",
+         "dispatch-highlighter.js",
+         "render-highlights.js"
+       ]
+     }
+   ],
+   "web_accessible_resources": [
+     {
+       "resources": ["html2pdf.bundle.min.js"],
+       "matches": ["<all_urls>"]
+     }
+   ],
+   "host_permissions": ["https://*/*"]
+ }
+ 
