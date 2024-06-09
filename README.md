@@ -1,4 +1,3 @@
-Web Annotator Extension
   *This extension has been made using html,css,javascript
 
   * ALLOWS TO HIGHLIGHT AND ADD NOTES TO THE REQUIRED TEXT
