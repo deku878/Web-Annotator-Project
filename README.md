@@ -1,6 +1,6 @@
 Web Annotator Extension
-1.This extension has been made using html,css,javascript
-2.Features include->
+  *This extension has been made using html,css,javascript
+
   * ALLOWS TO HIGHLIGHT AND ADD NOTES TO THE REQUIRED TEXT
   
   * THE HIGHLIGHTED AND ADDED NOTES REMAIN EVEN AFTER REFRESH
